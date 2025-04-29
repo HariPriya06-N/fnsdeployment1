@@ -11,6 +11,7 @@ body{
 }
 .navimage{
     display: flex;
+    width: 14%;
     margin: 15px 40px;
     gap: 8px;
    
@@ -20,6 +21,8 @@ body{
     width: 45%;
     border: 1px solid black;
     border-radius: 50%;
+    max-width: 100%;
+    height: auto;
     
 }
 .navmenu{
@@ -37,6 +40,7 @@ a{
     font-size: 20px;
     color: black;
 }
+
 .main{
     
     flex-direction: column;
@@ -57,16 +61,26 @@ a{
     margin-top:150px;
    
 }
-.linkdin,.git{
+.linkdin{
     border:1px solid white;
-    padding: 15px;
+    padding: 16px;
     color: white;
-    font-size: 45px;
+    font-size: 35px;
+    font-weight: 700;
+}
+.git{
+    border:1px solid white;
+    padding: 16px;
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
 }
 .leetcode{
     border:1px solid white;
-    padding: 22.5px;
+    padding: 19px;
+    padding-bottom: 24px;
     color: white;
+    font-weight: 700;
 
 }
 
@@ -87,8 +101,8 @@ p{
     
 }
 button{
-    margin-top: 25px;
-    padding:10px;
+    margin-top: 30px;
+    padding:20px;
     border-radius:5px;
     height:10vh;
     width:34%;
@@ -97,119 +111,202 @@ button{
     margin-left: 200px;
     background-color: white;
     cursor: pointer;
+    margin-bottom: 15px;
     
     
 }
+.mouse {
+    width: 25px;
+    height: 240px;
+    border: 2px solid #eee;
+    border-radius: 60px;
+    margin-left: 300px;
+    margin-top: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.dot {
+    width: 5px;
+    height: 5px;
+    background-color: #eee;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: moveUpDown 2s infinite;
+}
+
+@keyframes moveUpDown {
+    0% {
+        top: 10px;
+        opacity: 1;
+    }
+    50% {
+        top: 70px;
+        opacity: 0.5;
+    }
+    100% {
+        top: 10px;
+        opacity: 1;
+    }
+}
+
 .main_2{
     display: flex;
-    height: 120vh;
+    height: 115vh;
     width: 100%;
     flex-direction: column;
     background-color: whitesmoke;
-    gap:50px;
+    gap:10px;
 }
 .main_2a{
     display: flex;
-    gap:90px;
+    gap:80px;
+    
 }
 .main_21{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+h2{
+    
+    font-weight: 700;
+    font-size: 2rem;
+}
 .main_p{
     color: gray;
-    line-height: 1.8;
+    line-height: 1.6;
 }
 .main_22{
     height: 80vh;
     width: 40%;
-    padding: 50px;
+    padding: 35px;
     text-align: justify;
     padding-left: 140px;
     
 }
 .main_pa{
     color: gray;
-    margin-top: 40px;
-    line-height: 1.8;
+    margin-top: 24px;
+    line-height: 1.6;
+    margin-bottom: 60px;
 }
 .button_2{
    background-color: cadetblue;
     color: white;
     cursor:pointer;
-  
-   margin-left: 0px;
+    font-weight: 700;
+   border-radius: 5px;
+   padding: 25px;
     
 
 }
 .main_23{
     margin-top: 30px;
+    padding-right: 100px;
+    
 }
 
 
 .list{
     display: flex;
-    gap:10px;
+    gap:30px;
+    flex-wrap: wrap;
     
 }
-.list_1,.list_2,.list_3,.list_4,.list_5{
+.list_1,.list_2,.list_3,.list_4,.list_5,.list_6,.list_7,.list_8,.list_9{
     color: gray;
     border: 1px solid grey;
+    border-radius: 10px;
     padding: 13px;
     background-color:gainsboro;
 }
 .main_3{
     display: flex;
-    height: 270vh;
+    height: 330vh;
     width: 100%;
     flex-direction: column;
     background-color:white;
 }
 .main_31{
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
 }
 .main_32{
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
-.main_sub,.main_sub1,.main_sub2{
+.main_sub,.main_sub1{
     display: flex;
     height: 100%;
     width: 100%;
-    gap:80px;
+    gap:30px;
+    
 
 }
 
-.port_img,.port_img1,.port_img2{
-    height:70% ;
-    width:95% ;
+.sub2,.sub21{
+    padding-left: 300px;
+}
+
+.port_img{
+    
     margin-left: 100px;
+    margin-right: 50px;
+    max-width: 100%;
+    height: auto;
+
+}
+.port_img1{
+   
+    width:190% ;
+    margin-left: 100px;
+    margin-right: 50px;
+    max-width: 100%;
+    height: auto;
 }
 
 
-
-.c1,.c2,.c3{
-    background-color: lightseagreen;
+.c1{
+    background-color:lightseagreen ;
     border-radius: 5px;
     cursor: pointer;
 }
-.c4,.c5,.c6,.c7{
+.c2{
+    background-color:lightseagreen ;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.c4,.c5{
     color: gray;
     font-size: 22px;
-    padding-right: 90px;
+    padding-right: 100px;
+    
+    text-align: justify;
+    font-weight: 500;
+}
+.c7{
+    color: gray;
+    font-size: 22px;
+    
+    font-weight: 500;
+    text-align: justify;
+    padding-left: 360px;
+    padding-right: 360px;
 }
 .main_4{
     display: flex;
-    height: 160vh;
+    height: 180vh;
     width: 100%;
     flex-direction: column;
-    
     background-color: rgb(0,98,185,0.8);
+    
 
 }
 .main_41{
@@ -251,6 +348,7 @@ form{
     margin: 0px;
     font-size: 15px;
     border-radius: 10px;
+    font-weight: 400;
     
 }
 .main_c3{
@@ -260,6 +358,8 @@ form{
     background-color: gainsboro;
     font-size: 15px;
     border-radius: 10px;
+    font-weight: 400;
+    margin: 0px;
 
 }
 .main_h4,.main_h41,.main_h42{
@@ -272,7 +372,7 @@ form{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .main4_button1{
     background-color: lightseagreen;
@@ -287,32 +387,41 @@ form{
     background-color: black;
     flex-direction: column;
     
+    
+    
+    
 
 }
 .footer_1{
     display: flex;
+    flex: 1;
     
 }
 .footer_11{
-    width: 49%;
+    width: 60%;
    display: flex;
    color: white;
    flex-direction: column;
 }
 .footer_h1{
-    padding-left: 0px;
-    padding-top: 50px;
+    display: flex;
+    width: 40%;
+    padding-left: 100px;
+    padding-top: 40px;
 }
 .footer_p{
-    padding-left: 270px;
-    font-size: 17px;
-    text-align: justify;
+    display: flex;
+    width: 80%;
+    padding-left: 200px;
+    font-size: 15px;
+    text-align:left;
 }
 .footer_12{
-    width: 48%;
+    flex: 1;
+    width: 40%;
     display: flex;
     flex-direction: column;
-    padding-left: 450px;
+    margin-left:300px;
    padding-top: 50px;
     gap:10px;
     align-items: center;
@@ -334,8 +443,9 @@ form{
 .linkdin1,.git1,.leetcode1{
   
     padding: 7px;
+    background-color: rgb(0,0,0);
     color: white;
-    font-size: 35px;
+    font-size: 30px;
     border-radius: 5px;
 }
 
@@ -551,6 +661,11 @@ margin: 20px;
 align-items: center;
 text-align: center;
 }
+.mouse {
+    width: 20px;
+    height: 150px; 
+    margin-left: 100px; 
+}
 h1 {
 font-size: 28px;
 }
@@ -559,12 +674,10 @@ font-size: 15px;
 line-height: 1.6;
 }
 button {
-font-size: 16px;
-width: 70%;
-margin-left: 0;
-height: auto;
-padding: 8px;
-}
+    width: 90%;  
+    font-size: 12px;  
+    padding: 6px 12px;  
+  }
 .main_2 {
 padding: 20px 0;
 gap: 30px;

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>
             Portfolio
         </title>
@@ -11,16 +13,19 @@
     <body>
         <div class="header">
            
-                <div class="navimage">
-                   <img class="nav_image" src="myimage.jpg">
+                <div class="navimage" id="home">
+                   <img class="nav_image" src="myimage.jpg" alt="Hari Priya profile image">
                    <h3>Hari Priya</h3>
                 </div>
                 <div class="navmenu">
-                   <a href="#"><b>Home</b></a>
-                   <a href="#"><b>About</b></a>
-                   <a href="#"><b>Projects</b></a>
-                   <a href="#"><b>Contact</b></a>
-                </div>
+                    <a href="#home"><b>Home</b></a>
+                    <a href="#about"><b>About</b></a>
+                    <a href="#projects"><b>Projects</b></a>
+                    <a href="#contact"><b>Contact</b></a>
+                 </div>
+                 
+            
+                 
                 
             
            
@@ -29,20 +34,25 @@
             <div class="main_1">
                 <div class="main_links">
                     <a class="linkdin" href="https://www.linkedin.com/in/hari-priya-natukula" target="_blank"><b>in</b></a>
-                    <a  class="git" href="https://github.com/HariPriya06-N/fnsdeployment" target="_blank"><i class="fab fa-github"></i></a>
+                    <a  class="git" href="https://github.com/HariPriya06-N" target="_blank"><i class="fa fa-github is"></i></a>
                    
                          
                     <a class="leetcode" href="https://leetcode.com/u/Natukula/"  target=" _blank"><i class="fa fa-code"></i></a>
 
                 </div>
-                <div class="main_name">
+                <div class="main_name" >
                     <h1>HEY MY NAME IS, HARI PRIYA</h1>
                     <p>I am Harpriya, a final-year B.Tech student determined to secure a good job before <br>graduation. I am improving my skills in aptitude, reasoning, Java coding, full-stack<br> development, and communication to achieve my career goals.</p>
-                    <button><b>Projects</b></button>
+                    <a href="#projects">
+                        <button><b>Projects</b></button>
+                    </a>
+                    <div class="mouse">
+                        <div class="dot"></div>
+                    </div>
                 </div>
                 
             </div>
-            <div class="main_2">
+            <div class="main_2" id="about">
                 <div class="main_21">
                     <h1 class="main_h1">About Me</h1>
                     <p class="main_p">I am Harpriya, an introverted yet determined person who values genuine<br> friendships and self-improvement. I stay motivated, embrace challenges,<br> and continuously work on enhancing my skills and confidence.</p>
@@ -52,25 +62,33 @@
                      <div class="main_22">
                          <h2>Get to Know about me!</h2>
                          <p class="main_pa">I am <b>Harpriya</b>, a final-year B.Tech student passionate about continuous learning and self-improvement. I am enhancing my skills in <b>full-stack development</b>, <b>Java coding</b>, <b>aptitude</b>, and <b>reasoning</b> to achieve my career goals. As an introverted yet determined person, I value genuine friendships and embrace challenges with a positive mindset. My focus is on growing both technically and personally to secure a successful future.</p>
-                         <button class="button_2">Contact</button>
+                         <a  href="#contact" <button class="button_2">Contact</button></a>
 
                      </div>
                      <div class="main_23">
                           <h2>My Skills</h2>
                          <div class="list">
-                             <b class="list_1">HTML</b>
-                              <b class="list_2">CSS</b>
-                              <b class="list_3">JAVASCRIPT</b>
-                             <b class="list_4">JAVA</b>
-                             <b class="list_5">PYTHON</b>
+                             <div class="list_1">HTML</div>
+                              <div class="list_2">CSS</div>
+                              <div class="list_3">JAVASCRIPT</div>
+                             <div class="list_4">JAVA</div>
+                             <div class="list_5">PYTHON</div>
+                             
+                             
+                             <div class="list_6">c++</div>
+                             <div class="list_7">ReactJS</div>
+                             <div class="list_8">ExpressJs</div>
+                             <div class="list_9">MERN Stack</div>
+                             
                          </div>
                      </div>
                 </div>
             </div>
-            <div class="main_3">
+            <div class="main_3" id="projects">
                 <div class="main_31">
                     <h1>Projects</h1>
-                    <p class="c7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quos unde recusandae molestiae beatae laboriosam quod impedit nemo ipsum id?</p>
+                    <p class="c7">These are some of my projects showcasing my skills in web development and Natural Language Processing. They highlight my ability to build practical, efficient solutions for real-world problems.
+                    </p>
                 </div>
                 <div class="main_32">
                     <div class="main_sub">
@@ -79,9 +97,12 @@
 
                         </div>
                         <div class="sub2">
-                            <h2>Project 1</h2>
-                            <p class="c4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit doloremque maxime, eum corporis eaque.</p>
-                            <button class="c1"><b>case study</b></button>
+                            <h2>Portfolio Website</h2>
+                            <p class="c4">
+                                Developed a personal portfolio website using HTML5, CSS3, and responsive design principles with Flexbox and Media Queries for cross-device compatibility. Enhanced the UI with Font Awesome Icons for improved visuals and deployed the site on Netlify. Managed the codebase using GitHub for version control.
+                            </p>
+                            <button class="c1"><a href="project1.html"><b>Case Study</b></a></button>
+
                         </div>
                     </div>
 
@@ -92,14 +113,18 @@
 
                         </div>
                         <div class="sub21">
-                            <h2>Project 2</h2>
-                            <p class="c5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fugit doloremque maxime, eum corporis eaque.</p>
-                            <button class="c2"><b>case study</b></button>
+                            <h2>NLP:Powered Resume screening with Intelligent Skill Enhancement Suggestions</h2>
+                            <p class="c5">
+                                Developed a web-based platform for automated resume screening using NLP, extracting key information and comparing it with job requirements. Provided skill gap analysis and enhancement suggestions using spaCy, NLTK, TF-IDF, and Cosine Similarity. Deployed the app with Django, managed code with Git, and tested using VS Code and PyCharm.
+                            </p>
+                            <button class="c2" onclick="window.location.href='project2.html';"><b>Case Study</b></button>
+
+
                         </div>
                     </div>
 
 
-                    <div class="main_sub2">
+                    <!-- <div class="main_sub2">
                         <div class="sub12">
                             <img class="port_img2" src="port.jpg">
 
@@ -111,13 +136,13 @@
                         </div>
                     </div>
 
-                </div>
+                </div> -->
 
             </div>
-            <div class="main_4">
+            <div class="main_4" id="contact">
                 <div class="main_41">
                     <h1 class="main_4h1">CONTACT</h1>
-                    <p class="main_4p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio harum dolorem debitis sapiente ut dicta.</p>
+                    <p class="main_4p">These are my contact details for further communication and inquiries.</p>
                 </div>
                 <div class="form">
                     <form>
@@ -126,8 +151,10 @@
 
                         <h4 class="main_h41">Email</h4>
                         <input  class="main_c2" type="email" name="Email" placeholder="Enter Your Email">
-                        <h4 class="main_h42">Messege</h4>
-                        <textarea  class="main_c3">Enter Your Messege</textarea>
+                        <h4 class="main_h42">Message</h4>
+                        
+                        <textarea class="main_c3" placeholder="Enter Your Message"></textarea>
+
                         <div class="main4_button">
                         <button class="main4_button1">SUBMIT</button>
                         </div>
@@ -136,18 +163,18 @@
             </div>
 
         </div>
-        <div class="footer">
+        <div class="footer" >
            <div class="footer_1">
 
             <div class="footer_11">
                 <h3 class="footer_h1">HARI PRIYA</h3>
-                <P class="footer_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quod id fugit. Vero, sequi impedit!</P>
+                <P class="footer_p">Connect with me on LinkedIn, GitHub, and other social media platforms</P>
             </div>
             <div class="footer_12">
                 <h3 class="footer_h2">Social</h3>
                 <div class="footer_links">
                      <a class="linkdin1" href="https://www.linkedin.com/in/hari-priya-natukula" target="_blank"><b>in</b></a>
-                     <a  class="git1" href="https://github.com/HariPriya06-N/fnsdeployment" target="_blank"><i class="fab fa-github"></i></a>
+                     <a  class="git1" href="https://github.com/HariPriya06-N" target="_blank"><i class="fa fa-github is"></i></a>
          
                     <a class="leetcode1" href="https://leetcode.com/u/Natukula/"  target=" _blank"><i class="fa fa-code"></i></a>
                     

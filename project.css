@@ -1,0 +1,35 @@
+
+
+        .case-study {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #f4f4f4;
+            font-family: 'poppins',sans-serif;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+           
+            line-height: 1.6;
+        }
+        .case-study h1, .case-study h2 {
+            color: #2c3e50;
+            font-weight: 1000;
+            font-family: 'sans-serif';
+        }
+        .case-study p {
+            margin-bottom: 15px;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .back-btn:hover {
+            background: #555;
+        }
+    
